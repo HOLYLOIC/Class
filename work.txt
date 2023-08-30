@@ -1,0 +1,22 @@
+//All of coding is with the need of correct spelling and capitalization so even if you spell Scanner as scanner when needed it won't work
+//Decloration - Datatype + name of varible. Ex. Int x
+//Datatype - the data that is in the language by default like int(whole number) and bool(boolian namded after the man who made it they are true or false statments)
+//class and objects - Things that need to be imported using code like using scanners. Ex Import java.util.Scanner
+//initilisization (I can't spell) - First time you assign an a value(number) to a varible(x or y or whatever you want)
+//Overwrite - when you replace code with code. Ex int x = 4; then later typing int x = 5; it will take which ever state(line or where you are in the code takes place after the semicolon ;)
+//order of operations - ....pemdas from algebra
+//incriments - just +1 or -1 writen by ++1 or --1
+//state - where the code is or what the code is = to
+//sum - varible x + y
+//numeric operations - a table of state, x, and y however a value is only added or changed based off state 
+//caste - change from one data type to another normally used with doubles and int
+//literal - the literal number 
+// - makes it to where java can't read or just ignores it 
+//siple operations +/-///*/%
+//advance operations +=/-=/ you get it
+
+All read from right to left
+|
+x = x + y                      <---- x += y same at that
+    |   |
+    add these to then solve 

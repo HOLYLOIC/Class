@@ -1,22 +1,100 @@
-//All of coding is with the need of correct spelling and capitalization so even if you spell Scanner as scanner when needed it won't work
-//Decloration - Datatype + name of varible. Ex. Int x
-//Datatype - the data that is in the language by default like int(whole number) and bool(boolian namded after the man who made it they are true or false statments)
-//class and objects - Things that need to be imported using code like using scanners. Ex Import java.util.Scanner
-//initilisization (I can't spell) - First time you assign an a value(number) to a varible(x or y or whatever you want)
-//Overwrite - when you replace code with code. Ex int x = 4; then later typing int x = 5; it will take which ever state(line or where you are in the code takes place after the semicolon ;)
-//order of operations - ....pemdas from algebra
-//incriments - just +1 or -1 writen by ++1 or --1
-//state - where the code is or what the code is = to
-//sum - varible x + y
-//numeric operations - a table of state, x, and y however a value is only added or changed based off state 
-//caste - change from one data type to another normally used with doubles and int
-//literal - the literal number 
-// - makes it to where java can't read or just ignores it 
-//siple operations +/-///*/%
-//advance operations +=/-=/ you get it
+Unit 1
+------
 
-All read from right to left
-|
-x = x + y                      <---- x += y same at that
-    |   |
-    add these to then solve 
+general:
+
+Multiplaying ints and doubles returns a double 
+Strings turn numbers put into them into letter values
+
+lesson 1 - output in java:
+
+Primitives - int, double, and boolean. Takes up less space, holds value of data
+referance data type - String, Integer, Custom classes. takes up more space in memory, holds a refence to a memory location
+Double - a numeric value with a decimal point (uses more memory than int)
+int - a numeric value without a decimal point 
+char - short for character 
+string - a varible that holds a word or collection of characters (normally in "double quotes", the s is capital, not used foir math, numbers stored in it turn to words)
+object - 
+commands - directions we (the programmer) assign to the code (java)
+class - a container used to just hold code (non static) or to call upon it later (static)
+error - also called an exseption; happens when the code cannot be ran 
+
+lesson 2 - user input and varibles:
+
+debugging - the process of finding and FIXING non working code (error handling)
+imput - what is put in, taken in, or operated on by any process or system
+scanner - adds the ability to get imput from the user
+varible - name for a spot in computer memory, the value can change (or vary) while running programs. They cannot have spaces, they cannot start with number (like 1test), they cannot be  the same name as a command... list of reserved words https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+declare - create the varible in memory 
+equal sign ( = ) - an assignment operator, it assigns a value to the right to the varible on the left
+
+lesson 3 - Data Types:
+
+Concatenation - glues 2 words together to makes longer words
++ - 2 meanings, one for ints and one for strings 
+boolean - represents true or false, saved as a single bit (binary digit), binary 0 or 1, True or false
+Domain - the range of possible value for a particular data type. domain for int is -2,147,483,648 to 2,147,483,648
+integer over flow - when the max number for an int is reached (2,147,483,648) and goes over (overflow) it will reset to the lowest value (-2,147,483,648)
+Constants - Varible that cannot be changed one it has been assigned, makes things more easy to read, saved more easily, created using final, used by doing all caps and underscores
+final - used to create constant varibles, the varibles will not affect the min and max valie of the java integer class
+
+lesson 4 - number calculations:
+
+normal operators:
+-------------------------
+Add +
+Subtract - 
+Multiply *
+Divide /
+-------------------------
+does all math the right of the = and it solves math right to left
+++ - x + 1 
+-- - x - 1
+compound operators: the main operator and the equals it'd make x = x + 4 just x += 4
+-------------------------------
++= - plus equals 
+-= - minus equals 
+*= - multiply equals
+/= -  divide equals 
+-------------------------------
+
+lesson 5 - modular division:
+
+modular divition - divides liek normal however, it return the remainder 
+% - mod divition 
+%= - compound mod divition 
+modular divition can be used for patterns, determine even and odd numbers, time calculations, money, online encryption, animation in video games 
+modular dividtion only works on intigers
+commenting - makes it to where anything in it is not read by java (//)
+modding a smaller number by a larger number it will return the larger number
+
+lesson 6 - Numeric cast:
+
+Java can store an int as a double but not a double as an int. java will convert double 10 - double 10.0
+widening conversions - conversion from a smaller data type to a larger (wider) data type 
+naarrowing conversions - converting from a larger data type to a smaller data type, such as from a double to an int
+casting - lets java know it can convert data types even though some information may be lost
+truncate - cuting off the entire decimal portion
+an int divied by an int is going to do integer division. 13/2 = 6 (after rounding down)
+a double divided by an int automatically turn into a double 
+
+unit 1 code examples
+--------------------
+
+Lesson 2:
+
+Scanner:
+
+Scanner s = new Scanner(System.in);
+String n;
+
+System.out.ptintln("what is your name?");
+n = s.nextLine();
+System.out.println("Hello " + n + " nice to meet you");
+
+result - Hello (name) nice to meet you
+
+"String" - data type 
+"n" - varible name. you cannot print out varibles until you give them a value 
+"n = s.nextLine();" - nextLine method, or command. creates a box onscreen in which the user will type what goes into it (for this example a name)
+"+" - acts like glue and adds the words together into a sentence 
